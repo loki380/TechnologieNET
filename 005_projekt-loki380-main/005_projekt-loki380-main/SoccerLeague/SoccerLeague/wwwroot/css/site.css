@@ -1,0 +1,132 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 66px;
+}
+.footer {
+  position: absolute;
+  background-color:white;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+#mainLayout {
+    background-image: url(https://www.worcester.gov.uk/images/easyblog_shared/2019/b2ap3_large_Football---carousel.jpg);
+    background-size: cover;
+    font-weight: bolder;
+    color: black;
+}
+
+.table{
+    background-color:white;
+}
+
+thead{
+    background-color: rgb(224, 224, 222);
+}
+h1{
+    text-align:center;
+    color:white;
+}
+.Details {
+    background-color: white;
+    padding: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom:5%;
+}
+.maincard {
+    width: 50%;
+    height: 75vh;
+    margin-left: 25%;
+    margin-top: 5%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #fff;
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+.maincard form{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-content:center;
+    text-align:center;
+}
+.maincard form button {
+    background-color: #56baed;
+    border: none;
+}
+.maincard form input {
+    padding:30px;
+    background-color: #f6f6f6;
+    border: none;
+}
+.labell {
+    display: none;
+}

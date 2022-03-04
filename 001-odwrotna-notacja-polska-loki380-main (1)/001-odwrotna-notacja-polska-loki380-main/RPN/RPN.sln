@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RPN", "RPN\RPN.csproj", "{7A45E53C-C926-4C6A-997B-06211F0C7463}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPNTest", "RPNTest\RPNTest.csproj", "{E4FE2BF4-3CC7-45CF-BC5D-7A3D4D6454D1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A45E53C-C926-4C6A-997B-06211F0C7463}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A45E53C-C926-4C6A-997B-06211F0C7463}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A45E53C-C926-4C6A-997B-06211F0C7463}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A45E53C-C926-4C6A-997B-06211F0C7463}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4FE2BF4-3CC7-45CF-BC5D-7A3D4D6454D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4FE2BF4-3CC7-45CF-BC5D-7A3D4D6454D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4FE2BF4-3CC7-45CF-BC5D-7A3D4D6454D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4FE2BF4-3CC7-45CF-BC5D-7A3D4D6454D1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {629D7BE4-6510-465C-ADB1-D90AE45D74DE}
+	EndGlobalSection
+EndGlobal

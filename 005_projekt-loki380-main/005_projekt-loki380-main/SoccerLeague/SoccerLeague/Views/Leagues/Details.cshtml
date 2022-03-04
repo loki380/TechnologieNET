@@ -1,0 +1,38 @@
+﻿@model SoccerLeague.Models.League
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>League Details</h1>
+<hr />
+<div class="Details">
+    <dl class="row">
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.LeagueName)
+        </dt>
+        <dd class="col-sm-6">
+            @Html.DisplayFor(model => model.LeagueName)
+        </dd>
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.Chairman)
+        </dt>
+        <dd class="col-sm-6">
+            @Html.DisplayFor(model => model.Chairman)
+        </dd>
+        <dt class="col-sm-4">
+            Teams in League:
+        </dt>
+@*        <dd class="col-sm-6">
+            @foreach (var item in Model.Teams)
+            {
+                @Html.DisplayFor(modelItem => item.TeamName)
+            }
+        </dd>*@
+    </dl>
+
+</div>
+<div style="margin-left:15%">
+    <a type="button" class="btn btn-light" asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
+    <a type="button" class="btn btn-light" asp-action="Index">Back to List</a>
+</div>

@@ -1,0 +1,23 @@
+﻿<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+@model IEnumerable<SoccerLeague.Models.Player>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>Top Players</h1>
+<button class="btn btn-light" id="bRefresh" data-url="@Url.Action("BestPlayers")">Refresh</button>
+<div id="table"></div>
+
+<script type="text/javascript">
+    $(function () {
+        $('#bRefresh').click(function (e) {
+            $('#table').load('/Home/BestPlayers');
+        });
+    });
+</script>
+
+<script>
+    $(function () {
+        $('#bRefresh').click();
+    });
+</script>

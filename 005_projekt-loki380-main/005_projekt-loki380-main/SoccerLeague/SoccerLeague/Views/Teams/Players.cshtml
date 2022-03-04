@@ -1,0 +1,47 @@
+﻿@model SoccerLeague.Models.Team
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Players in @Html.DisplayFor(model => model.TeamName)</h1>
+
+<div>
+    <hr />
+
+</div>
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Position
+                </th>
+                <th>
+                    Points
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Players)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Firstname) @Html.DisplayFor(modelItem => item.Lastname)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Position)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Points)
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <a type="button" class="btn btn-light" asp-action="Index">Back to List</a>
+</div>

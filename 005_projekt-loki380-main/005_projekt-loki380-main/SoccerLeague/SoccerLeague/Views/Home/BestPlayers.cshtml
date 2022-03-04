@@ -1,0 +1,50 @@
+﻿@model IEnumerable<SoccerLeague.Models.Player>
+
+<table class="table">
+    <thead>
+        <tr>
+            <td>
+                Nr
+            </td>
+            <th>
+                Name
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Points)
+            </th>
+            <th>
+                Age:
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Team)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            int i = 1;
+            foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        #@i
+                        @{i++;}
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Firstname) @Html.DisplayFor(modelItem => item.Lastname)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Points)
+                    </td>
+                    <td>
+                        <age-helper age-helper-value="item.DateOfBirth"></age-helper>
+                    </td>
+                    <td>
+                        <img src="@Url.Content(item.Team.PhotoLink)" alt="" height="40" width="40">
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
